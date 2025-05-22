@@ -13,7 +13,3 @@ wk.add({
 --map("n", ";", ":", { desc = "CMD enter command mode" })
 
 map("i", "jk", "<ESC>")
-
-map("n", "<leader>fos", "<cmd>ObsidianSearch<cr>", { desc = "Search Notes" })
-map("n", "<leader>fon", "<cmd>ObsidianNew<cr>", { desc = "New Notes" })
-map("n", "<leader>fod", "<cmd>ObsidianDailies<cr>", { desc = "Daily Notes" })

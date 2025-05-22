@@ -51,7 +51,11 @@ return {
       substitutions = {},
     },
   },
-  key = {},
+  keys = {
+    { "<leader>fos", "<cmd>ObsidianSearch<cr>", { desc = "Search Notes" } },
+    { "<leader>fon", "<cmd>ObsidianNew<cr>", { desc = "New Notes" } },
+    { "<leader>fod", "<cmd>ObsidianDailies<cr>", { desc = "Daily Notes" } },
+  },
   picker = {
     -- Set your preferred picker. Can be one of 'telescope.nvim', 'fzf-lua', or 'mini.pick'.
     name = "fzf-lua",
