@@ -1,3 +1,12 @@
+local obsidian_path = ""
+local hostname = vim.fn.hostname()
+
+if hostname == "Christiaans-MacBook-Pro.local" then
+  obsidian_path = "/Users/christiaan/vault/"
+elseif hostname == "fenris" then
+  obsidian_path = ""
+end
+
 return {
   "epwalsh/obsidian.nvim",
   version = "*", -- recommended, use latest release instead of latest commit
@@ -21,7 +30,7 @@ return {
     workspaces = {
       {
         name = "personal",
-        path = "/Users/christiaan/vault",
+        path = obsidian_path,
       },
     },
     daily_notes = {
