@@ -10,7 +10,8 @@ wk.add({
   { "<leader>fo", group = "Obsidian" },
 })
 
-map("n", ";", ":", { desc = "CMD enter command mode" })
+--map("n", ";", ":", { desc = "CMD enter command mode" })
+
 map("i", "jk", "<ESC>")
 
 map("n", "<leader>fos", "<cmd>ObsidianSearch<cr>", { desc = "Search Notes" })
