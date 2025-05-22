@@ -24,8 +24,23 @@ return {
         path = "/Users/christiaan/vault",
       },
     },
-
-    -- see below for full list of options 👇
+    daily_notes = {
+      -- Optional, if you keep daily notes in a separate directory.
+      folder = "Daily Notes",
+      -- Optional, if you want to change the date format for the ID of daily notes.
+      date_format = "%d-%m-%Y",
+      -- Optional, default tags to add to each new daily note created.
+      default_tags = { "daily-notes" },
+      -- Optional, if you want to automatically insert a template from your template directory like 'daily.md'
+      template = "daily.md",
+    },
+    templates = {
+      folder = "templates",
+      date_format = "%d-%m-%Y",
+      time_format = "%H:%M",
+      -- A map for custom variables, the key should be the variable and the value a function
+      substitutions = {},
+    },
   },
   key = {},
   picker = {
