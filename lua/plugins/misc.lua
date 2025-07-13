@@ -7,7 +7,7 @@ return {
       require("hop").setup({ keys = "etovxqpdygfblzhckisuran" })
     end,
     keys = {
-      { ";", "<cmd>HopWord<cr>" },
+      { "'", "<cmd>HopWord<cr>" },
     },
   },
 }
