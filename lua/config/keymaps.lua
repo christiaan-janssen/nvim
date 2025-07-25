@@ -5,15 +5,11 @@
 local map = vim.keymap.set
 local wk = require("which-key")
 
--- vim.g.maplocalleader = ";"
-
-vim.g["conjure#mapping#prefix"] = ";"
-
 -- Document which-key groups
 wk.add({
   { "<leader>fo", group = "Obsidian" },
 })
 
---map("n", ";", ":", { desc = "CMD enter command mode" })
+vim.g["conjure#mapping#prefix"] = ";"
 
 map("i", "jk", "<ESC>")
